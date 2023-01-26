@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+body{
+    margin: 0px;
+    background: linear-gradient(rgba(78,99,230,1) 26%, rgba(115,173,237,1) 66%);
+}
+
+.banner{
+    width: 100%;
+    height: 645px;
+    background-image: /*linear-gradient(rgba(7, 4, 6, 0.25), rgba(7, 4, 6, 0.25)),*/ url('/src/images/fundo-pesquisa.jpg');
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+.barraDePesquisa input{
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 60px;
+    width: 800px;
+    height: 30px;
+    background-color: #EDEFEE;
+    padding: 10px 10px 10px 50px;
+    font-size: 20px;
+    color: grey;
+    background-image: url('/src/images/lupa.png');
+    background-size: 20px;
+    background-position-x: 20px;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 12px grey;
+}
+
+.barraDePesquisa{
+    display: flex;
+    justify-content: center;
+}
+
+.navegacao{
+    background-color: transparent;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 200px;
+    padding: 0px 10px;
+    font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+    font-size: larger;
+}
+
+
+.menu ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.menu li{
+    margin: 10px;
+    text-decoration: none;
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+}
+
+li{
+    display: inline-block;
+    position: relative;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 20px 30px;
+  }
+  span{
+    display: block;
+    padding: 10px 10px;
+  }
+  li::before, li::after{
+    content:"";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    transition: all 0.2s linear;
+    background: black;
+  }
+  
+  span::before, span::after{
+    content:"";
+    width:2px;
+    height:0;
+    position: absolute;
+    transition: all 0.2s linear;
+    background: black;
+  }
+  li:hover::before, li:hover::after{
+    width: 100%;
+  }
+  li:hover span::before, li:hover span::after{
+    height: 100%;
+  }
+
+
+li::before, li::after{
+    transition-delay: 0.2s;
+  }
+  li span::before, li span::after{
+    transition-delay: 0s;
+  }
+  li::before{
+    right: 0;
+    top: 0;
+  }
+  li::after{
+    left: 0;
+    bottom: 0;
+  }
+  li span::before{
+    left: 0;
+    top: 0;
+  }
+  li span::after{
+    right: 0;
+    bottom: 0;
+  }
+  li:hover::before, li:hover::after{
+    transition-delay: 0s;
+  }
+  li:hover span::before, li:hover span::after{
+    transition-delay: 0.2s;
+  }
+
+
+.container{
+    display:flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 30px;
+    color: white;
+}
+
+
+
+.instrucoes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 30px;
+}
+
+.imagens{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: url(/src/images/lua2.jpg);
+    background-size: cover;
+
+}
+
+.textos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 90px;
+}
+
+.inicio a{
+    text-decoration: none;
+    color: black;
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
+}

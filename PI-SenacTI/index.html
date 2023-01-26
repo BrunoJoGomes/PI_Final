@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+    <div class="home">
+
+        <div class="banner">
+
+            <header>
+                <div class="navegacao">
+                    <div class="inicio">
+                        <a href="#">DISTRIK</a>
+                    </div>
+        
+                    <div class="menu">
+                        <nav>
+                            <ul>
+                                <li class="active"><a href=""><span>LOGIN</span></a></li>
+                                <li><a href=""><span>CADASTRO</span></a> </li>
+                                <li><a href=""><span>FALE CONOSCO</span></a></li>
+                                <li><a href=""><span>SOBRE NÓS</span></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+    
+        </header>
+           
+
+            <div class="barraDePesquisa">
+                
+            <input type="text" class="icon" value placeholder="Digite sua localização"></div>
+
+
+        </div>
+
+        <div class="container">
+            <div class="instrucoes reveal">
+                <div class="imagens"></div>
+
+                <div class="textos">Pesquise serviços perto de você</div>
+            </div>
+
+            <div class="instrucoes reveal">
+                <div class="textos">TEXTO2</div>
+                <div class="imagens"></div>
+            </div>
+
+            <div class="instrucoes reveal">
+                <div class="imagens"></div>
+
+                <div class="textos">TEXTO3</div>
+            </div>
+
+            <div class="instrucoes reveal">
+                <div class="textos">TEXTO4</div>
+                <div class="imagens"></div>
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', reveal);
+    
+        function reveal(){
+          var reveals = document.querySelectorAll('.reveal');
+    
+          for(var i = 0; i < reveals.length; i++){
+    
+            var windowheight = window.innerHeight;
+            var revealtop = reveals[i].getBoundingClientRect().top;
+            var revealpoint = 150;
+    
+            if(revealtop < windowheight - revealpoint){
+              reveals[i].classList.add('active');
+            }
+            else{
+              reveals[i].classList.remove('active');
+            }
+          }
+        }
+    </script>
+</body>
+</html>
