@@ -8,7 +8,7 @@ body{
 .banner{
     width: 100%;
     height: 645px;
-    background-image: url('/PI-SenacTI/src/images/fundo-pesquisa.jpg');
+    background-image: url('/src/images/fundo-pesquisa.jpg');
     background-repeat: cover;
     display: flex;
     flex-direction: column;
@@ -28,7 +28,7 @@ body{
     padding: 10px 10px 10px 50px;
     font-size: 20px;
     color: grey;
-    background-image: url('/PI-SenacTI/src/images/lupa.png');
+    background-image: url('/src/images/lupa.png');
     background-size: 20px;
     background-position-x: 20px;
     background-position-y: 50%;
@@ -145,6 +145,7 @@ li::before, li::after{
     flex-direction: column;
     margin: 30px;
     color: white;
+    font-family: 'Concert One', cursive;
 }
 
 
@@ -154,7 +155,6 @@ li::before, li::after{
     justify-content: column;
     align-items: center;
     margin: 30px;
-    font-size: larger;
     padding: 150px;
 }
 
@@ -162,6 +162,8 @@ li::before, li::after{
   border-radius: 50%;
   width: 300px;
   height: 300px;
+  -webkit-filter: drop-shadow(0px 0px 20px rgba(0 0 0 / 90%)); 
+  filter: drop-shadow(0px 0px 20px rgba(0 0 0 / 90%));
 }
 
 .textos{
@@ -171,6 +173,8 @@ li::before, li::after{
     width: 1000px;
     height: 200px;
     margin-left: 100px;
+    font-size: larger;
+    text-shadow: grey 2px 2px;
 }
 
 .inicio a{
@@ -191,7 +195,7 @@ li::before, li::after{
 }
 
 footer {
-  margin-top: 100px;
+  margin-top: 120px;
   color: white;
   margin-bottom: 0px;
   display: flex;
